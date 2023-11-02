@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
+    repoURL: https://github.com/AmuDaDev/hygi3n3-employee-management-app-k8-config.git
     targetRevision: HEAD
     path: dev
   destination: 
