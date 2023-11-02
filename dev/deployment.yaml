@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hygi3n3-employee-management-app
+spec:
+  selector:
+    matchLabels:
+      app: hygi3n3-employee-management-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hygi3n3-employee-management-app
+    spec:
+      containers:
+      - name: hygi3n3-employee-management-app
+        image: amuk3lani/hygi3n3-employee-management-app:latest
+        ports:
+        - containerPort: 8080
